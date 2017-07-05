@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/Rlv_upload_property_image"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignEnd="@+id/Rlv_Price"
+        android:layout_alignStart="@+id/Rlv_Price"
+
+        android:layout_below="@+id/Rlv_epc"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_corner_view">
+
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/imageView16"
+            android:text="Upload property Photos"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="11dp"
+            android:src="@drawable/attchemtnpic" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/Rlv_upload_property_image"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/imageView19"
+            android:layout_marginStart="52dp"
+            android:src="@drawable/remove"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/imageView14"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_menu_camera" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/imageView19"
+            android:layout_marginStart="53dp"
+            android:src="@drawable/remove"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/imageView17"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_menu_camera" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/imageView22"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_menu_camera" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_menu_camera" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignStart="@+id/rlv_image"
+        android:layout_alignTop="@+id/rlv_image"
+        android:layout_marginStart="52dp"
+        android:src="@drawable/remove"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignTop="@+id/rlv_image"
+        android:layout_marginStart="62dp"
+        android:layout_toEndOf="@+id/imageView18"
+        android:src="@drawable/remove"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Rlv_upload_property_image"
+        android:layout_alignStart="@+id/Rlv_upload_property_image"
+        android:layout_below="@+id/rlv_image"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/loginbutton"
+        android:text="Submit"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignTop="@+id/rlv_image"
+        android:layout_marginStart="58dp"
+        android:layout_toEndOf="@+id/imageView20"
+        android:src="@drawable/remove"
+        android:visibility="invisible" />
+
+</RelativeLayout>

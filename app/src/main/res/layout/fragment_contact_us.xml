@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+
+    <!-- Login progress -->
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom"
+
+        android:scaleType="fitXY"
+        android:src="@drawable/backendbuilding" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/relativeLayout4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="28dp"
+                android:text="Email Address :letstalk@jvhub.co.uk"
+                android:textColor="#4a4848" />
+
+            <RelativeLayout
+                android:id="@+id/rlv_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent">
+
+                    <TextView
+                        android:id="@+id/textView341"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Enter Your Details Below and we'll call you"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/editText2"
+                    android:layout_below="@+id/relativeLayout5"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/bordercolour"
+                    android:ems="10"
+                    android:hint="Full Name"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editText1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="37dp"
+                    android:background="@drawable/bordercolour"
+                    android:ems="10"
+                    android:hint="Contact no"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:textSize="18dp" />
+
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_alignEnd="@+id/editText2"
+                    android:layout_alignStart="@+id/editText2"
+                    android:layout_below="@+id/editText2"
+                    android:layout_marginTop="36dp"
+                    android:background="@drawable/loginbutton"
+                    android:text="Call me"
+                    android:textColor="#ffffff"
+                    android:textColorHighlight="@android:color/background_light"
+                    android:textColorLink="@android:color/background_light"
+                    android:textSize="18dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/rlv_container"
+                android:layout_marginTop="26dp"
+                android:background="@color/colorAccent">
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Email or Contact us"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView36email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/textView38"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dp"
+                android:text="Customer Services:800 80 2500"
+                android:textColor="#4a4848"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/textView38"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp"
+                android:text="Customer Services:800 80 2500"
+                android:textColor="#4a4848" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

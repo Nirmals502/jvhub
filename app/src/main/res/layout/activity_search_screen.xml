@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="500dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/backendbuilding" />
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="200dp"
+                android:layout_height="180dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@android:drawable/ic_lock_power_off" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/textView4"
+                android:layout_alignStart="@+id/textView4"
+                android:layout_below="@+id/imageView"
+                android:layout_marginTop="15dp"
+                android:text="Your match criteria will be based on the information you enter here."
+                android:textColor="#4b4b4b"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/experiencedinvestor"
+                android:layout_alignStart="@+id/experiencedinvestor"
+                android:layout_below="@+id/textView3"
+                android:layout_marginTop="8dp"
+                android:paddingStart="15dp"
+                android:text="Are you a new or experienced investor?"
+                android:textColor="#4b4b4b"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/experiencedinvestor"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_below="@+id/textView4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="6dp"
+
+                android:background="@drawable/spinner">
+
+            </Spinner>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/experiencedinvestor"
+                android:layout_below="@+id/experiencedinvestor"
+                android:layout_marginTop="9dp"
+                android:paddingStart="10dp"
+                android:text="How will you fund this purchase? "
+                android:textColor="#4b4b4b"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/fund"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignEnd="@+id/experiencedinvestor"
+                android:layout_alignStart="@+id/experiencedinvestor"
+                android:layout_below="@+id/textView5"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/spinner">
+
+            </Spinner>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/ROI"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_below="@+id/fund"
+                android:layout_marginTop="9dp"
+                android:paddingStart="10dp"
+                android:text="Desired ROI? "
+                android:textColor="#4b4b4b"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/ROI"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignEnd="@+id/fund"
+                android:layout_alignStart="@+id/fund"
+                android:layout_below="@+id/textView6"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/spinner">
+
+            </Spinner>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/price"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_below="@+id/ROI"
+                android:layout_marginTop="9dp"
+                android:paddingStart="10dp"
+                android:text="Price? "
+                android:textColor="#4b4b4b"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignEnd="@+id/fund"
+                android:layout_alignStart="@+id/fund"
+                android:layout_below="@+id/textView7"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/minimum">
+
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/price2"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignEnd="@+id/fund"
+                android:layout_alignStart="@+id/fund"
+                android:layout_below="@+id/price"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/newmaxi">
+
+            </Spinner>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/price"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_below="@+id/price2"
+                android:layout_marginTop="9dp"
+                android:paddingStart="10dp"
+                android:text="Type of investment sought? "
+                android:textColor="#4b4b4b"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/invest"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignEnd="@+id/fund"
+                android:layout_alignStart="@+id/fund"
+                android:layout_below="@+id/textView8"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/spinner" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/price"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_below="@+id/invest"
+                android:layout_marginTop="9dp"
+                android:paddingStart="10dp"
+                android:text="When do you plan to purchase? "
+                android:textColor="#4b4b4b"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/purchaseplan"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignEnd="@+id/fund"
+                android:layout_alignStart="@+id/fund"
+                android:layout_below="@+id/textView9"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/spinner" />
+
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/price"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_below="@+id/purchaseplan"
+                android:layout_marginTop="9dp"
+                android:paddingStart="10dp"
+                android:text="What's your preferred timescale to hold your properties? "
+                android:textColor="#4b4b4b"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/timescale"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignEnd="@+id/fund"
+                android:layout_alignStart="@+id/fund"
+                android:layout_below="@+id/textView10"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/spinner" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/price"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_below="@+id/timescale"
+                android:layout_marginTop="9dp"
+                android:paddingStart="10dp"
+                android:text="What Are you looking for? "
+                android:textColor="#4b4b4b"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/lookingfor"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignEnd="@+id/fund"
+                android:layout_alignStart="@+id/fund"
+                android:layout_below="@+id/textView11"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/spinner" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/price"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_below="@+id/lookingfor"
+                android:layout_marginTop="9dp"
+                android:paddingStart="10dp"
+                android:text="How much have you set aside to invest? "
+                android:textColor="#4b4b4b"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/asideinvest"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignEnd="@+id/fund"
+                android:layout_alignStart="@+id/fund"
+                android:layout_below="@+id/textView12"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/spinner" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/price"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_below="@+id/asideinvest"
+                android:layout_marginTop="9dp"
+                android:paddingStart="10dp"
+                android:text="What's your risk appetite? "
+                android:textColor="#4b4b4b"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/riskappetite"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignEnd="@+id/fund"
+                android:layout_alignStart="@+id/fund"
+                android:layout_below="@+id/textView13"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/spinner" />
+
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/price"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_below="@+id/riskappetite"
+                android:layout_marginTop="9dp"
+                android:paddingStart="10dp"
+                android:text="Locality or area? "
+                android:textColor="#4b4b4b"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/locality"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignEnd="@+id/fund"
+                android:layout_alignStart="@+id/fund"
+                android:layout_below="@+id/textView14"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/search2" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/locality"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/loginbutton"
+                android:text="SEARCH"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
